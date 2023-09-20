@@ -1,0 +1,201 @@
+.shopping-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  background-color: #fdfefe;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 80%;
+  height: 40px;
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 16px;
+  max-width: 400px;
+}
+
+.shopping-list .product-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.shopping-list .product-list .product {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 10px;
+}
+
+.shopping-list .product-list .product:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.shopping-list .product-list .product .product-image img {
+  height: 100px;
+  max-width: 100px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.shopping-list .product-list .product .product-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.shopping-list .product-list .product .product-info .product-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.shopping-list .product-list .product .product-info .product-price {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.shopping-list .product-list .product .product-action {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.shopping-list .product-list .product .product-action button {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #a9a9a9;
+  border-radius: 100%;
+  background-color: #fdfefe;
+  color: #333;
+  font-size: 16px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.shopping-list .product-list .product .product-action button:hover {
+  background-color: #328165;
+  color: #fdfefe;
+}
+
+.shopping-list .empty-list-text {
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.shopping-list .add-product {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopping-list .add-product button {
+  width: 200px;
+  height: 50px;
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+  background-color: #328165;
+  color: #fdfefe;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  margin-right: 10px;
+}
+
+.shopping-list .add-product button:hover {
+  background-color: #fdfefe;
+  color: #328165;
+}
+
+@media screen and (max-width: 768px) {
+  .search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .search-bar input {
+    width: 90%;
+    height: 50px;
+    border: 1px solid #a9a9a9;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+    max-width: 1000px;
+  }
+
+  .shopping-list .add-product button {
+    width: 70%;
+  }
+
+  .shopping-list .product-list .product .product-image img {
+    height: 60px;
+    max-width: 60px;
+    border-radius: 10px;
+    margin-right: 20px;
+    object-fit: contain;
+  }
+
+  .shopping-list .product-list .product .product-info .product-name {
+    font-size: 14px;
+    font-weight: bold;
+    word-break: break-all;
+  }
+
+  .shopping-list .product-list .product .product-action {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .shopping-list .product-list .product .product-action button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #fdfefe;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+  }
+}

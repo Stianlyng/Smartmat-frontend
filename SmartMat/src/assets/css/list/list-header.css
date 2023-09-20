@@ -1,0 +1,35 @@
+.list-header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.switch button {
+  border: none;
+  width: 100px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #328165;
+  color: #fdfefe;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+.switch .active {
+  background-color: #333;
+}
+
+.switch :nth-child(1) {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.switch :nth-child(2) {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.switch button:hover {
+  background-color: #333;
+}

@@ -1,0 +1,79 @@
+.welcome {
+  height: 100vh;
+  width: 100%;
+  max-width: 100vw;
+  background: linear-gradient(0deg, #328165 0%, #31c48d 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.welcome .logo {
+  width: 100%;
+  max-width: 300px;
+}
+
+.welcome h1 {
+  font-size: 2.5rem;
+  color: #fdfefe;
+  width: 80%;
+  text-align: center;
+}
+
+.welcome a {
+  background-color: #fdfefe;
+  color: #328165;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.1s ease-in-out;
+}
+
+.welcome a:hover {
+  opacity: 0.8;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.2;
+  animation: bounce 1s infinite;
+}
+
+.scroll-indicator img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .welcome {
+    justify-content: flex-start;
+    padding-top: 5rem;
+  }
+
+  .welcome h1 {
+    font-size: 1.5rem;
+  }
+}

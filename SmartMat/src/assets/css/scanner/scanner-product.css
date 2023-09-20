@@ -1,0 +1,155 @@
+.scanner-product {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdfefe;
+  position: fixed;
+}
+
+.scanner-product .product-image {
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.scanner-product .product-image img {
+  width: 100px;
+  object-fit: cover;
+}
+
+.scanner-product .product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.scanner-product .product-amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.scanner-product .product-amount .amount-input {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #333333;
+  color: #333333;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 20px;
+  text-align: right;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.scanner-product .product-amount .amount-button {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #333333;
+  background-color: #fff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333333;
+  font-size: 28px;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.scanner-product .product-amount .amount-button:hover {
+  background-color: #333333;
+  color: #fff;
+}
+
+.scanner-product .product-amount .amount-unit {
+  font-size: 20px;
+  color: #333333;
+  margin-left: 5px;
+}
+
+.scanner-product .product-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.scanner-product .product-buttons button {
+  width: 250px;
+  height: 50px;
+  border: 1px solid #fdfefe;
+  background-color: #328165;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fdfefe;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.scanner-product .product-buttons button:hover {
+  background-color: #fdfefe;
+  border: 1px solid #328165;
+  color: #328165;
+}
+
+@media screen and (max-width: 768px) {
+  .scanner-product {
+    padding-bottom: 50px;
+  }
+
+  .scanner-product .product-info {
+    margin-bottom: 10px;
+  }
+
+  .scanner-product .product-info h1 {
+    font-size: 24px;
+  }
+
+  .scanner-product .product-image {
+    padding: 10px;
+  }
+
+  .scanner-product .product-image img {
+    width: 80px;
+  }
+
+  .scanner-product .product-amount .amount-input {
+    width: 50px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .scanner-product .product-amount .amount-button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .scanner-product .product-amount .amount-unit {
+    font-size: 16px;
+  }
+
+  .scanner-product .product-buttons button {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+  }
+}

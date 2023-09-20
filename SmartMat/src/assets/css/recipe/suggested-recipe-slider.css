@@ -1,0 +1,61 @@
+.suggested-recipe-slider-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+  color: #fdfefe;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+}
+
+.no-found-text {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+  color: #fdfefe;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+}
+
+.suggested-recipe-slider {
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.suggested-recipe-slider .suggested-recipe-slider-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.suggested-recipe-slider .suggested-recipe-slider-slide .slide-content {
+  background-color: #fdfefe;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.suggested-recipe-slider .suggested-recipe-slider-slide .slide-content img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.suggested-recipe-slider .suggested-recipe-slider-slide .slide-content h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  width: 200px;
+}
+
+.suggested-recipe-slider .suggested-recipe-slider-slide .slide-content:hover img {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}

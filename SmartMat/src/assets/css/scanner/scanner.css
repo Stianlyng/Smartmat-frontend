@@ -1,0 +1,47 @@
+.scanner {
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  background: linear-gradient(0deg, #328165 0%, #31c48d 100%);
+}
+
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #fdfefe;
+  text-decoration: none;
+  font-size: 1.5rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.scanner .manual-button {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fdfefe;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  cursor: pointer;
+  color: #fdfefe;
+  text-decoration: none;
+  font-size: 1.5rem;
+}

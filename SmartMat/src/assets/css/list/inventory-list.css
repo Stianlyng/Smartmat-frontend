@@ -1,0 +1,315 @@
+.inventory-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  background-color: #fdfefe;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.search-bar input {
+  flex: 1;
+  height: 40px;
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+  padding-left: 10px;
+  margin: 0 10px;
+  font-size: 16px;
+  max-width: 400px;
+}
+
+.inventory-list .product-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.inventory-list .product-list .product {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid #a9a9a9;
+  transition: all 0.1s ease-in-out;
+}
+
+.inventory-list .product-list .product:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.inventory-list .product-list .product .product-image img {
+  height: 100px;
+  max-width: 100px;
+  border-radius: 10px;
+  margin-right: 20px;
+  object-fit: contain;
+}
+
+.inventory-list .product-list .product .product-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.inventory-list .product-list .product .product-info .product-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.inventory-list .product-list .product .product-info .product-days-left {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.inventory-list .product-list .product .product-action {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.inventory-list .product-list .product .product-action button {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #333333;
+  border-radius: 50px;
+  background-color: #fdfefe;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.inventory-list .product-list .product .product-action button:hover {
+  background-color: #328165;
+  color: #fdfefe;
+  border: 8px solid #328165;
+}
+
+.inventory-list .product-list .soon {
+  background-color: rgba(255, 153, 0, 0.3);
+}
+
+.inventory-list .product-list .expired {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.inventory-list .empty-list-text {
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.inventory-list .allergy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.inventory-list .allergy-icon {
+  font-size: 28px;
+  color: orange;
+  opacity: 0.5;
+  margin-right: 5px;
+}
+
+.inventory-list .allergy-text {
+  font-size: 14px;
+  color: #333;
+}
+
+.confirm-popup {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.confirm-popup .confirm-popup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 400px;
+  background-color: #fdfefe;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.confirm-popup .confirm-popup-content .confirm-popup-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.confirm-popup .confirm-popup-content .confirm-popup-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirm-popup .confirm-popup-content .confirm-popup-buttons button {
+  width: 100px;
+  height: 50px;
+  border: 2px solid #333333;
+  border-radius: 50px;
+  background-color: #fdfefe;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.confirm-popup .confirm-popup-content .confirm-popup-buttons button:hover {
+  background-color: #328165;
+  color: #fdfefe;
+  border: 8px solid #328165;
+}
+
+.confirm-popup .confirm-popup-content .confirm-popup-slider {
+  width: 200px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .search-bar input {
+    width: 90%;
+    height: 50px;
+    border: 1px solid #a9a9a9;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+    max-width: 1000px;
+  }
+
+  .inventory-list .product-list .product .product-image img {
+    height: 60px;
+    max-width: 60px;
+    border-radius: 10px;
+    margin-right: 20px;
+    object-fit: contain;
+  }
+
+  .inventory-list .product-list .product .product-info .product-name {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .inventory-list .product-list .product .product-info .product-days-left {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .inventory-list .product-list .product .product-action {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .inventory-list .product-list .product .product-action button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #fdfefe;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .inventory-list .allergy-text {
+    font-size: 12px;
+    color: #333;
+  }
+
+  .inventory-list .allergy-icon {
+    font-size: 18px;
+    color: orange;
+    opacity: 0.5;
+  }
+
+  .confirm-popup .confirm-popup-content .confirm-popup-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .confirm-popup .confirm-popup-content .confirm-popup-buttons button {
+    width: 80px;
+    height: 40px;
+    border: 1px solid #333333;
+    border-radius: 50px;
+    background-color: #fdfefe;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .confirm-popup .confirm-popup-content .confirm-popup-slider {
+    width: 200px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+}

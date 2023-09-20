@@ -1,0 +1,5 @@
+Description of 'Products.json'
+
+The Products.json is a json file containing keywords for all pre-registered fresh groceries in our database. 
+
+This file is utilized to ensure that any search for these keywords fetches the correct item from our internal database, and not from the external database.

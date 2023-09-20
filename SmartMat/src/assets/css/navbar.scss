@@ -1,0 +1,137 @@
+header {
+  background-color: #328165;
+  opacity: 1;
+  z-index: 99;
+  width: 100%;
+  position: fixed;
+  transition: 0.5s ease all;
+
+  nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+    transition: 0.5s ease all;
+    width: 90%;
+    margin: 0 auto;
+    @media (min-width: 1140px) {
+      max-width: 1140px;
+    }
+
+    ul,
+    .link {
+      font-weight: 500;
+      color: white;
+      list-style: none;
+      text-decoration: none;
+    }
+
+    li {
+      text-transform: uppercase;
+      padding: 20px;
+      margin-left: 20px;
+    }
+
+    .link {
+      font-size: 16px;
+      transition: 0.3s ease all;
+      padding-bottom: 4px;
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+        color: #31c48d;
+        border-color: #31c48d;
+      }
+    }
+
+    .branding {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 80px;
+        padding: 1px;
+        transition: 0.5s ease all;
+      }
+    }
+
+    .navigation {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      justify-content: flex-end;
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      right: 10px;
+      height: 100%;
+      color: #fdfefe;
+
+      i {
+        cursor: pointer;
+        font-size: 24px;
+        transition: 0.8 ease all;
+      }
+    }
+
+    .icon-active {
+      transform: rotate(180deg);
+    }
+
+    .dropdown-nav {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      width: 100%;
+      max-width: 250px;
+      height: 100%;
+      background-color: #226950;
+      top: 0;
+      right: 0px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      animation: slide-in 0.2s forwards;
+      opacity: 1;
+
+      li {
+        margin-left: 10px;
+
+        .link {
+          color: #fdfefe;
+        }
+      }
+
+      .branding {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.scrolled-nav {
+  background-color: #226950;
+  opacity: 1;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+  nav {
+    padding: 1px 0;
+
+    .branding {
+      img {
+        width: 70px;
+      }
+    }
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(250px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}

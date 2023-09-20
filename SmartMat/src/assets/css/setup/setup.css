@@ -1,0 +1,121 @@
+.setup {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #31c48d 0%, #328165 100%);
+  color: #fdfefe;
+  animation: fadein 2s ease-in;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.setup h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  max-width: 800px;
+}
+
+.setup p {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  text-align: center;
+  max-width: 800px;
+}
+
+.setup button {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 0.5em;
+  background: #fdfefe;
+  color: #328165;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.setup button:hover {
+  background: #328165;
+  color: #fdfefe;
+}
+
+.setup .button-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.setup input[type='text'] {
+  padding: 0.5em 0.5em;
+  border: none;
+  border-radius: 0.5em;
+  background: #fdfefe;
+  color: #328165;
+  font-size: 1.5em;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  margin-right: 0.5em;
+}
+
+.setup .button-secondary {
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.setup .button-secondary:hover {
+  text-decoration: underline;
+}
+
+.setup .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .setup {
+    padding: 0 1em;
+    padding-bottom: 4em;
+  }
+
+  .setup h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+
+  .setup p {
+    font-size: 1em;
+  }
+
+  .setup button {
+    font-size: 1em;
+  }
+
+  .setup .button-row {
+    max-width: 250px;
+  }
+
+  .setup input[type='text'] {
+    font-size: 1em;
+  }
+}
